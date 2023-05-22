@@ -1,7 +1,9 @@
 /* colors for website design
-    #EF3E36 - red
+    #f65151 - red
     #EFF1ED - white
     #FCA311 - orange
+    #3b3b3b - gray
+    
 */
 
 
@@ -15,13 +17,22 @@
     margin-bottom: -15px;
 }
 
+.main-content {
+    background-color: #3b3b3b;
+    color: #fef4f4;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
 #main-name {
+    height: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color:  #EFF1ED;
 }
 
 #main-name-transform {
@@ -37,25 +48,60 @@
     text-align: center;
 }
 
-.skills-section {
-    text-align: center;
-}
-
 #about {
     text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#about>h2 {
+    color: #f65151;
+}
+
+.skills-section {
+    text-align: center;
 }
 
 #front-end-skills {
     margin-left: 20px;
     margin-right: 20px;
-    border: black solid;
-    padding: 50px;
-    
+    width: 75px;
+    border: #f65151 solid;
+    border-radius: 50px;
+    border-width: 4px;
+    opacity: 80%;
+    padding: 30px;
+    flex: auto;
 }
 
-.skills-group {
+#skills-group {
     display: flex;
-    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/*Whenever the screen changes to mobile device, make it responsive */
+@media (max-width: 800px) {
+    #skills-group {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #front-end-skills {
+        margin-bottom: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: auto;
+        height: auto;
+    }
+}
+
+.next-part {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
